@@ -10,6 +10,162 @@ class MainAdmin extends StatefulWidget {
 class _MainAdminState extends State<MainAdmin> {
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.cyan,);
+    return Scaffold(
+      backgroundColor: Color(0xffF4F8FF),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 100,
+          ),
+          Center(
+            child: Container(
+              height: 70,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.grey,
+              ),
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 300, top: 10),
+                    child: Icon(
+                      Icons.access_alarm,
+                      size: 40,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 150, top: 20),
+                    child: Text(
+                      ':موعد يوم الثلاث  ',
+                      style: TextStyle(
+                        fontFamily: 'Tajawal',
+                        fontSize: 18,
+                        color: const Color(0xff000000),
+                        fontWeight: FontWeight.w300,
+                      ),
+                      softWrap: false,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30, top: 20),
+                    child: Text(
+                      '9:00 باقي 2ي',
+                      style: TextStyle(
+                        fontFamily: 'Tajawal',
+                        fontSize: 15,
+                        color: const Color(0xff000000),
+                        fontWeight: FontWeight.w300,
+                      ),
+                      softWrap: false,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Center(
+            child: Container(
+              height: 70,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.grey,
+              ),
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 300, top: 10),
+                    child: Icon(
+                      Icons.access_alarm,
+                      size: 40,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 150, top: 20),
+                    child: Text(
+                      ':موعد يوم الاحد  ',
+                      style: TextStyle(
+                        fontFamily: 'Tajawal',
+                        fontSize: 18,
+                        color: const Color(0xff000000),
+                        fontWeight: FontWeight.w300,
+                      ),
+                      softWrap: false,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30, top: 20),
+                    child: Text(
+                      '10:00 باقي 5ي',
+                      style: TextStyle(
+                        fontFamily: 'Tajawal',
+                        fontSize: 15,
+                        color: const Color(0xff000000),
+                        fontWeight: FontWeight.w300,
+                      ),
+                      softWrap: false,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Center(
+            child: Container(
+              height: 70,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.grey,
+              ),
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 300, top: 10),
+                    child: Icon(
+                      Icons.access_alarm,
+                      size: 40,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 150, top: 20),
+                    child: Text(
+                      ':موعد يوم الاحد  ',
+                      style: TextStyle(
+                        fontFamily: 'Tajawal',
+                        fontSize: 18,
+                        color: const Color(0xff000000),
+                        fontWeight: FontWeight.w300,
+                      ),
+                      softWrap: false,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30, top: 20),
+                    child: Text(
+                      '9:00 باقي 6ي',
+                      style: TextStyle(
+                        fontFamily: 'Tajawal',
+                        fontSize: 15,
+                        color: const Color(0xff000000),
+                        fontWeight: FontWeight.w300,
+                      ),
+                      softWrap: false,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
