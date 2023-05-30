@@ -52,20 +52,7 @@ class _AdminState extends State<Admin> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFF4F8FF),
-      appBar: AppBar(
-        backgroundColor: Color(0xFFB799FF),
-        title: Center(
-          child: Text(
-            "القائمة",
-            style: TextStyle(
-              fontFamily: 'Tajawal',
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
-            ),
-          ),
-        ),
-      ),
+
       body: PageView(
         controller: _pageController,
         children: screens,

@@ -16,23 +16,40 @@ class _AddState extends State<Add> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp( debugShowCheckedModeBanner: false,
-    home:Scaffold(
-      body: Stepper(
-        type: StepperType.vertical,
-        steps: getSteps(),
-        currentStep: currentStep,
-        onStepContinue: (){
-          final isLastStep = currentStep == getSteps().length - 1;
-          if (isLastStep){
-            print("done");
+    home:Directionality(
+      textDirection: TextDirection.rtl,
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color(0xFFB799FF),
+          title: Center(
+            child: Text(
+              "الاضافة",
+              style: TextStyle(
+                fontFamily: 'Tajawal',
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ),
+        body: Stepper(
+          type: StepperType.vertical,
+          steps: getSteps(),
+          currentStep: currentStep,
+          onStepContinue: (){
+            final isLastStep = currentStep == getSteps().length - 1;
+            if (isLastStep){
+              print("done");
 
-          }else {
-            setState(() => currentStep += 1);
-          }
-        },
-        onStepCancel: currentStep == 0 ? null : (){
-          setState(() => currentStep -= 1);
-        },
+            }else {
+              setState(() => currentStep += 1);
+            }
+          },
+          onStepCancel: currentStep == 0 ? null : (){
+            setState(() => currentStep -= 1);
+          },
+        ),
       ),
     )
     );
@@ -40,7 +57,7 @@ class _AddState extends State<Add> {
   List<Step> getSteps() => [
     Step(
         isActive: currentStep >= 1,
-        title: Text("اختر نوع الموعد"),
+        title: Text("اختر نوع الموعد",style: TextStyle(fontFamily: 'Tajawal',fontSize: 20),),
         content: SizedBox(
           width: 150,
           child: DropdownButton<String>(
@@ -59,14 +76,15 @@ class _AddState extends State<Add> {
     ),
     Step(
         isActive: currentStep >= 2,
-        title: Text("مكان الموعد"),
+        title: Text("مكان الموعد",style: TextStyle(fontFamily: 'Tajawal',fontSize: 20),),
         content: Container(
           child: TextField(),
         )
     ),
     Step(
         isActive: currentStep >= 3,
-        title: Text("توقيت الموعد"),
+
+        title: Text("توقيت الموعد",style: TextStyle(fontFamily: 'Tajawal',fontSize: 20)),
         content:Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -96,7 +114,7 @@ class _AddState extends State<Add> {
     ),
     Step(
         isActive: currentStep >= 4,
-        title: Text("ملاحظات"),
+        title: Text("ملاحظات",style: TextStyle(fontFamily: 'Tajawal',fontSize: 20)),
         content: TextField())
 
   ];

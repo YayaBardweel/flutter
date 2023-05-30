@@ -11,11 +11,25 @@ class _MainAdminState extends State<MainAdmin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xFFB799FF),
+        title: Center(
+          child: Text(
+            "القائمة",
+            style: TextStyle(
+              fontFamily: 'Tajawal',
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+          ),
+        ),
+      ),
       backgroundColor: Color(0xffF4F8FF),
       body: Column(
         children: [
           SizedBox(
-            height: 100,
+            height: 50,
           ),
           Center(
             child: Container(
