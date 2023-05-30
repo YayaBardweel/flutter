@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:theproject/Dac/lib/aboutBoxtime.dart';
 import 'package:theproject/Dac/lib/AppointmentScreen.dart';
 import 'package:theproject/Doctor/Admin.dart';
+import 'package:theproject/Doctor/add.dart';
 import 'package:theproject/Patient/chat.dart';
 
 import 'Dac/lib/aboutthedoc.dart';
